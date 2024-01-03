@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh; /* Define a altura mínima do corpo como 100% da altura da viewport */
+    background: linear-gradient(to bottom, #3498db 60%, #9b59b6 115%);
+    color: #ffffff; 
+}
+.color_sub :hover{
+    text-decoration: none;
+    color: white;
+}

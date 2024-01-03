@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+}
+
+.background-animation {
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transparent-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+}
+.transparent-card .card-body {
+    padding: 20px;
+}
+ /* Estilo base para a imagem */
+ .background-animation img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos personalizados para dispositivos móveis */
+@media (max-width: 768px) {
+    .background-animation img {
+        max-width: 50%; /* Reduz o tamanho da imagem para 50% da largura da tela */
+    }
+}

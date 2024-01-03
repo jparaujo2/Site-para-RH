@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/salario.css">
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <title>Calculo de Salário</title>
+</head>
+<body>
+    <header class="bg-dark py-0">
+        <div class="container">
+            <div class="d-flex justify-content-center mb-0">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 150px; width: auto;">
+            </div>
+            <div class="color_sub">
+                <div class="d-flex justify-content-around pt-2">
+                    <a href="index.html" class="">Login</a>
+                    <a href="horas.html" class="">Horas</a>
+                    <a href="ferias.html"class="">Férias</a>
+                </div>
+            </div>
+            </dov>
+    </header>
+
+    <div class="background-animation">
+        <div class="container mt-5">
+            <h2 class="font-weight-light text-center">Calculo de Salário</h2>
+            <form id="salary-form" class="mt-3">
+                <div class="form-group font-weight-bolder">
+                    <label for="exampleSelect">Funcionário</label>
+                    <select id="exampleSelect" class="form-control w-75">
+                        <option value="funcionario0">Selecione um Colaborador</option>
+                        <option value="funcionario1">JCLORANDI_GER</option>
+                        <option value="funcionario2">JPARAUJO_AUX</option>
+                        <option value="funcionario3">GFERREIRA_DIR</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-dark" id="useExampleBtn">Funcionário</button>
+                <div class="form-group font-weight-bolder text-dark">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control w-50" id="name" required>
+                </div>
+                <div class="form-group font-weight-bolder text-dark">
+                    <label for="position">Cargo:</label>
+                    <input type="text" class="form-control w-50" id="position" required>
+                </div>
+                <div class="form-group font-weight-bolder text-dark">
+                    <label for="hoursWorked">Horas trabalhadas:</label>
+                    <input type="number" class="form-control w-50" id="hoursWorked" required>
+                </div>
+                <div class="form-group font-weight-bolder text-dark">
+                    <label for="hourlyRate">Taxa por hora:</label>
+                    <input type="number" class="form-control w-50" id="hourlyRate" required>
+                </div>
+                <button type="submit" class="btn btn-dark">Calcular Salário</button>
+            </form>
+            <div class="mt-4 bg-white rounded p-3 text-dark" id="result">
+                <h4 class="mb-5 border-bottom border-dark">Informações e Salário Calculado</h4>
+                <p><strong>Nome:</strong> <span id="displayName" class="text-dark"></span></p>
+                <p><strong>Cargo:</strong> <span id="displayPosition" class="text-dark"></span></p>
+                <p><strong>Salário Calculado:</strong> <span id="salaryAmount" class="text-dark"></span></p>
+            </div>
+            <a href="horas.html" class="btn-dark btn bg-dark font-weight-light mt-5 ml-auto">Avançar</a>
+        </div>
+    </div>
+
+    <script src="javascript/salario.js"></script>
+</body>
+</html>

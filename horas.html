@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Apontamento de Horas</title>
+    <link rel="stylesheet" href="horas.css">
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+</head>
+<header class="bg-dark py-0">
+    <div class="container">
+        <div class="d-flex justify-content-center mb-0">
+            <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 150px; width: auto;">
+        </div>
+        <div>
+            <div class="color_sub">
+                <div class="d-flex justify-content-around pt-2">
+                    <a href="index.html" class="text-decoration-none">Login</a>
+                    <a href="salario.html" class="text-decoration-none">Salario</a>
+                    <a href="ferias.html" class="text-decoration-none">Férias</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container mt-5">
+        <h2 class="font-weight-light text-center ">Apontamento de Horas</h2>
+        <form id="hours-form" class="mt-3">
+            <div class="form-group font-weight-bolder">
+                <label for="employee-select">Funcionário</label>
+                <select id="employee-select" class="form-control w-75">
+                    <option value="0">Escolha um Colaborador</option>
+                    <option value="1">José Carlos Lorandi (Gerente)</option>
+                    <option value="2">Joao Pedro Araujo (Assistente)</option>
+                    <option value="3">Gislaine Ferreira (Diretor)</option>
+                </select>
+            </div>
+            <div class="form-group font-weight-bolder">
+                <label for="hours-worked">Horas trabalhadas:</label>
+                <input type="number" class="form-control w-50" id="hours-worked" required>
+            </div>
+            <div class="form-group font-weight-bolder">
+                <label for="date-worked ">Data:</label>
+                <input type="date" class="form-control" id="date-worked" required>
+            </div>
+            <button type="button" class="btn btn-dark" id="add-hours-btn">Adicionar Horas</button>
+        </form>
+        <div class="mt-4 bg-white rounded p-3 text-dark">
+            <h4 class="mb-4 text-dark">Horas Registradas</h4>
+            <ul id="hours-list" class="list-group">
+                <!-- Horas trabalhadas serão exibidas aqui -->
+            </ul>
+        </div>
+    </div>
+    <div class="button-container d-flex justify-content-around mt-5">
+        <a href="salario.html">
+            <div class="btn btn-dark text-center">Voltar</div>
+        </a>
+        <a href="ferias.html">
+            <div class="btn btn-dark text-center">Avançar</div>
+        </a>
+    </div>
+
+    <script src="horas.js"></script>
+</body>
+</html>
